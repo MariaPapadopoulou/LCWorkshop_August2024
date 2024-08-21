@@ -436,6 +436,87 @@
 	"cwrc:hasPrecision": "cwrc:highCertainty"
 }]]>
         </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/MariaPapadopoulou/LCWorkshop_August2024/main/Russ_DToC/russ_women.xml?place_annotation_20240821194409245",
+	"type": "oa:Annotation",
+	"dcterms:created": "2024-08-21T15:44:09.245Z",
+	"dcterms:modified": "2024-08-21T15:44:09.245Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/MariaPapadopoulou",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Maria Papadopoulou, Ph.D."
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/MariaPapadopoulou/LCWorkshop_August2024/main/Russ_DToC/russ_women.xml?place_annotation_20240821194409245#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/MariaPapadopoulou/LCWorkshop_August2024/main/Russ_DToC/russ_women.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.5.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/MariaPapadopoulou/LCWorkshop_August2024/main/Russ_DToC/russ_women.xml?place_annotation_20240821194409245#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/p/note[2]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q5538073",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.5.0"
+	},
+	"cwrc:hasCertainty": "cwrc:medium",
+	"cwrc:hasPrecision": "cwrc:mediumCertainty"
+}]]>
+        </rdf:Description>
       </rdf:RDF></xenoData></teiHeader>
 	<text>
 		<body>
@@ -480,7 +561,7 @@
 				<persName key="E. D. E. N. Southworth" ref="http://www.wikidata.org/entity/Q447019" xml:id="persName_sbc_hn5_31c">Mrs.-d-n S--thw-rth</persName> and <persName key="Sarah Elizabeth Forbush Downs" ref="http://www.wikidata.org/entity/Q13562984" xml:id="persName_tbc_hn5_31c">Mrs. G--rg--Sh-Id-n</persName> and (Miss?) <persName key="Georgette Heyer" ref="http://www.wikidata.org/entity/Q272706" cert="high" role="aut" type="real" xml:id="persName_ubc_hn5_31c">G--rg-tt- H-y-r</persName> and
 				<persName key="Barbara Cartland" ref="http://www.wikidata.org/entity/Q235965" role="aut" xml:id="persName_vbc_hn5_31c">B-rb-r- C-rtl-nd</persName> and the legion of
 				those who, writing, write not, like the dead Miss B--l-y<note type="annotation" xml:id="colman01">Miss Bailey, the title character in a short story written
-					by George Colman.</note> of the poem who was seduced into bad practices
+					by <placeName key="George Colman" ref="http://www.wikidata.org/entity/Q5538073" cert="medium">George Colman<precision match="@ref" precision="medium"/></placeName>.</note> of the poem who was seduced into bad practices
 				(fudging her endings) and hanged herself in her garter. The sun was going down.
 				I was blind and stiff.</p>
 			
