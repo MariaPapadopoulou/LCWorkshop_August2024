@@ -596,6 +596,85 @@
 	}
 }]]>
         </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/MariaPapadopoulou/LCWorkshop_August2024/main/Russ_DToC/russ_women.xml?keyword_annotation_20240821194647320",
+	"type": "oa:Annotation",
+	"dcterms:created": "2024-08-21T15:46:47.320Z",
+	"dcterms:modified": "2024-08-21T15:46:47.320Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/MariaPapadopoulou",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Maria Papadopoulou, Ph.D."
+	},
+	"oa:motivatedBy": "oa:tagging",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/MariaPapadopoulou/LCWorkshop_August2024/main/Russ_DToC/russ_women.xml?keyword_annotation_20240821194647320#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/MariaPapadopoulou/LCWorkshop_August2024/main/Russ_DToC/russ_women.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.5.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/MariaPapadopoulou/LCWorkshop_August2024/main/Russ_DToC/russ_women.xml?keyword_annotation_20240821194647320#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/back/div/p/seg"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "fabio:UncontrolledVocabulary",
+		"dc:format": "text/xml",
+		"rdf:value": ""
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.5.0"
+	}
+}]]>
+        </rdf:Description>
       </rdf:RDF></xenoData></teiHeader>
 	<text>
 		<body>
@@ -766,7 +845,7 @@
 				<p>Joanna Russ is the author of a <rs key="novel" ref="http://www.wikidata.org/entity/Q8261">novel</rs> published by Dell Books, <title key="We Who Are About To..." ref="http://www.wikidata.org/entity/Q7977856">We Who Are About To</title>, and of the science fiction novel, <title key="The Two of Them" ref="http://www.wikidata.org/entity/Q7770974">The Two
 					of Them,</title> to be published by Putnam's. This spring Daughters, Inc.
 					will present her fantasy novel, Kit'a Story: A Tale of Magic. She lives in
-					<placeName key="Bellevue" ref="http://www.wikidata.org/entity/Q214164" cert="medium">Bellevue<precision match="@ref" precision="high"/></placeName>, Washington. </p>
+					<placeName key="Bellevue" ref="http://www.wikidata.org/entity/Q214164" cert="medium">Bellevue<precision match="@ref" precision="high"/></placeName>, Washington<seg type="keyword"><term/></seg>. </p>
 			</div>
 		</back>
 	</text>
